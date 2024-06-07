@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-color: #fbbe01;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+
+.container{  
+    background-color: #ffff;
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 150vh;
+    max-width: 100%;
+}
+
+#avatar{
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+#name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom:  10px;
+}
+
+#description{
+    margin-bottom: 25px;
+    color:  hsl(220, 5%, 24%);
+
+}
+
+.icons_container{
+    display: flex;
+    justify-content: center;
+}
+
+.twitch{
+    transition: transform 0.3s ease;
+}
+
+.twitch:hover{
+    transform: scale(1.2);
+}
+.twitter{
+    transition: transform 0.3s ease;
+}
+
+.twitter:hover{
+    transform: scale(1.2);
+}
+.github{
+    transition: transform 0.3s ease;
+    margin-right: 0;
+}
+
+.github:hover{
+    transform: scale(1.2);
+}
+.instagram{
+    transition: transform 0.3s ease;
+    margin-left: 0
+}
+
+.instagram:hover{
+    transform: scale(1.2);
+    
+}
+.linkedin{
+    transition: transform 0.3s ease;
+}
+
+.linkedin:hover{
+    transform: scale(1.2);
+}
+.email{
+    transition: transform 0.3s ease;
+}
+
+.email:hover{
+    transform: scale(1.2);
+}
+
+
+
+.icons_list{
+    display: flex;
+    list-style-type: none;
+    
+}
+
+.icons_list li{
+    margin: 0 5px 20px 5px;
+}
+
+.list_main{
+    list-style-type: none;
+}
+
+.list_main li{
+    background-color: #fbbe01;
+    margin: 0 0 15px 0;
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.list_main li svg {
+    flex-shrink: 0;
+}
+
+.list_main li p {
+    margin: 0 10px 0 ;
+    color: black;
+}
+
+
+#banner{
+   margin-top: 50px;
+    border-radius: 10px;
+}
+
+
+.footer {
+   display: none;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #name {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .icons_list li {
+        margin: 0 3px 15px 3px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .list_main li {
+        margin: 0 0 10px 0;
+        padding: 8px 0 8px 0;
+    }
+}
+
+
+@media only screen and (max-width: 1400px) {
+    #banner {
+        margin-top: 30px;
+    }
+}
